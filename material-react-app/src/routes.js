@@ -46,7 +46,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Workforce Mgmt",
+    name: "Workforce Management",
     key: "tables",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
@@ -99,6 +99,14 @@ const routes = [
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/auth/reset-password",
     component: <ResetPassword />,
+  },
+  {
+    type: "collapse",
+    name: "Chat Box",
+    key: "tables",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/tables",
+    component: <Tables />,
   },
 ];
 
