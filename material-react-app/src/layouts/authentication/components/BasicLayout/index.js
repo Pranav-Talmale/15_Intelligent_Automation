@@ -122,7 +122,6 @@ function BasicLayout({ image, children }) {
               </MDBox>
             </MDBox>
           </MDBox>
-          <Footer light />
         </MDBox>
       </MDBox>
     </PageLayout>

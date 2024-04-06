@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Grid from "@mui/material/Grid";
 
@@ -48,12 +33,12 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Bookings"
+                title="Number of Employees"
                 count={281}
                 percentage={{
                   color: "success",
-                  amount: "+55%",
-                  label: "than lask week",
+                  amount: "+5%",
+                  label: "than lask year",
                 }}
               />
             </MDBox>
@@ -62,7 +47,7 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Today's Users"
+                title="Sales"
                 count="2,300"
                 percentage={{
                   color: "success",
@@ -77,7 +62,7 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="success"
                 icon="store"
-                title="Revenue"
+                title="Warehouse Supplies"
                 count="34k"
                 percentage={{
                   color: "success",
@@ -92,8 +77,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
-                count="+91"
+                title="Employee Satisfaction Rate"
+                count="+9"
                 percentage={{
                   color: "success",
                   amount: "",
@@ -109,9 +94,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
+                  title="Your Work Hours"
                   description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
+                  date="Updated 2hrs. ago"
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -120,10 +105,11 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
+                  title="Monthly Attendance Report"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+15%</strong>) increase in this month's
+                      attendance.
                     </>
                   }
                   date="updated 4 min ago"
@@ -155,7 +141,6 @@ function Dashboard() {
           </Grid>
         </MDBox>
       </MDBox>
-      <Footer />
     </DashboardLayout>
   );
 }
