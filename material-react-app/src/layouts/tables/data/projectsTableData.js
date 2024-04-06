@@ -31,6 +31,9 @@ import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
 import logoSlack from "assets/images/small-logos/logo-slack.svg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+// import Prompt from "layouts/tables/data/";
+
+
 
 export default function data() {
   const Project = ({ image, name }) => (
@@ -39,6 +42,7 @@ export default function data() {
       <MDTypography display="block" variant="button" fontWeight="medium" ml={1} lineHeight={1}>
         {name}
       </MDTypography>
+      
     </MDBox>
   );
 
