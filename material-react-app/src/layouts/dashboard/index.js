@@ -90,7 +90,7 @@ function Dashboard() {
         </Grid>
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
+            {/* <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
@@ -100,8 +100,43 @@ function Dashboard() {
                   chart={reportsBarChartData}
                 />
               </MDBox>
-            </Grid>
+            </Grid> */}
+            {/* <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="success"
+                  title="Monthly Attendance Report"
+                  description={
+                    <>
+                      (<strong>+15%</strong>) increase in this month's
+                      attendance.
+                    </>
+                  }
+                  date="updated 4 min ago"
+                  chart={sales}
+                />
+              </MDBox>
+            </Grid> */}
+
             <Grid item xs={12} md={6} lg={4}>
+              {/* <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="completed tasks"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={tasks}
+                />
+              </MDBox> */}
+            </Grid>
+          </Grid>
+        </MDBox>
+        <MDBox>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6} lg={8}>
+              <Projects />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4} mt={7}>
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
@@ -117,28 +152,7 @@ function Dashboard() {
                 />
               </MDBox>
             </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-                <ReportsLineChart
-                  color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
-                  chart={tasks}
-                />
-              </MDBox>
             </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={8}>
-              <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <OrdersOverview />
-            </Grid>
-          </Grid>
         </MDBox>
       </MDBox>
     </DashboardLayout>

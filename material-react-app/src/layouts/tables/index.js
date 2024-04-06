@@ -53,7 +53,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Employee Table
+                  Attendance Tracking
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
@@ -80,7 +80,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Current Projects Table
+                  Leave Management
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
