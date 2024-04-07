@@ -26,7 +26,7 @@ import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
-
+import AIChatbox from "services/AIChatbox";
 import UserManagement from "layouts/user-management";
 
 import ForgotPassword from "auth/forgot-password";
@@ -105,8 +105,8 @@ const routes = [
     name: "Chat Box",
     key: "tables",
     icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/tables",
-    component: <Tables />,
+    route: "/chatbot",
+    component:<AIChatbox/> ,
   },
 ];
 

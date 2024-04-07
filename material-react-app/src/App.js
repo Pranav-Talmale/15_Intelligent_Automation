@@ -28,6 +28,7 @@ import themeRTL from "assets/theme/theme-rtl";
 // Material Dashboard 2 React Dark Mode themes
 import themeDark from "assets/theme-dark";
 import themeDarkRTL from "assets/theme-dark/theme-rtl";
+import AIChatbox from "services/AIChatbox";
 
 // RTL plugins
 import rtlPlugin from "stylis-plugin-rtl";
@@ -304,6 +305,16 @@ export default function App() {
               element={
                 <ProtectedRoute isAuthenticated={authContext.isAuthenticated}>
                   <UserProfile />
+                </ProtectedRoute>
+              }
+              key="user-profile"
+            />
+            <Route
+              exact
+              path="chatbot"
+              element={
+                <ProtectedRoute isAuthenticated={authContext.isAuthenticated}>
+                  <AIChatbox />
                 </ProtectedRoute>
               }
               key="user-profile"
