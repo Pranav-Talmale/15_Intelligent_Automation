@@ -37,15 +37,9 @@ function PaymentMethod() {
 
   return (
     <Card id="delete-account">
-      <MDBox
-        pt={2}
-        px={2}
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-      >
+      <MDBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
         <MDTypography variant="h6" fontWeight="medium">
-          AI CHATBOT
+          AI CHATBOT 
         </MDTypography>
         <MDButton variant="gradient" color="dark">
           <Icon sx={{ fontWeight: "bold" }}>add</Icon>
@@ -67,12 +61,8 @@ function PaymentMethod() {
               }}
             >
               {/* <MDBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} /> */}
-
-              <MDBox
-                ml="auto"
-                lineHeight={0}
-                color={darkMode ? "white" : "dark"}
-              >
+              
+              <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
                 <Tooltip title="Generate" placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
                     search
@@ -81,8 +71,14 @@ function PaymentMethod() {
               </MDBox>
             </MDBox>
           </Grid>
-        </Grid>
-      </MDBox>
+          </Grid>
+              
+              
+              
+  </MDBox>
+          
+        
+      
     </Card>
   );
 }
